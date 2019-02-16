@@ -47,8 +47,8 @@
 .card .dropdown-content {
 	top: unset !important;
 	left: unset !important;
-	right: 44px;
-	bottom: 0;
+	right: 50px;
+	bottom: 5px;
 	width: auto !important;
 	max-width: 50% !important;
 	border-radius: 10px;
