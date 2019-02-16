@@ -7,9 +7,17 @@
 	margin: 10px 0;
 }
 
+.nav-wrapper .right {
+	margin-right: 15px;
+}
+
 .btn-large {
 	border-radius: 30px;
 	font-weight: bold;
+}
+
+.toast+.toast {
+	display: none;
 }
 
 /* CARDS */
@@ -50,7 +58,7 @@
 	right: 50px;
 	bottom: 5px;
 	width: auto !important;
-	max-width: 50% !important;
+	max-width: 75% !important;
 	border-radius: 10px;
 }
 
@@ -176,6 +184,14 @@
 	background-position: 15px center;
 }
 
+.card .collection .collection-item {
+	background: transparent;
+}
+
+.collection-item .fa-lg.left {
+	margin-right: 10px;
+}
+
 .magic .card-image {
 	background-image: url('img/jumpers/magiccastle.jpg');
 }
@@ -286,6 +302,33 @@
 	bottom: 0;
 	left: 0;
 	background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+/* AGREEMENT & CART */
+
+.snipcart-summary-empty .snipcart-total-items {
+	display: none;
+}
+
+.snipcart-total-items:before {
+	content: '(';
+}
+
+.snipcart-total-items:after {
+	content: ')';
+}
+
+.modal {
+	border-radius: 30px;
+}
+
+.agreement-section {
+	padding-top: 30px;
+}
+
+.lever {
+	position: relative;
+	top: -2px;
 }
 
 @media (max-width: 800px) {
