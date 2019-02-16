@@ -675,8 +675,9 @@
 	<!-- AGREEMENT -->
 	<div id="agreement" class="modal modal-fixed-footer">
 		<div class="modal-content grey lighten-5">
-			<h1>Policies &amp; Terms</h1>
-			<p>Please agree to our Policies, Terms &amp; Conditions and Safety Policy before continuing. Pressing 'BACK' will empty the cart and return you to the store.</p>
+			<h2>Terms and Conditions</h2>
+			<p>Please agree to our Policies, Terms &amp; Conditions and Safety Policy before continuing.</p>
+			<p>You will still be able to modify your order.</p>
 			<!--policies-->
 			<div id="policies" class="agreement-section">
 				<h3>Policies</h3>
@@ -852,11 +853,11 @@
 			</div>
 		</div>
 		<div class="modal-footer z-depth-1">
-			<a class="switch btn-flat left">
+			<a class="switch left">
 				<label style="color: #512da8 !important; font-weight: bold; font-size: 16px;">
-					<input type="checkbox" class="modal-action modal-close snipcart-checkout" onclick="$('.snipcart-summary').addClass('snipcart-checkout').removeClass('modal-trigger'); $('#agreement').destroy();">
+					<input type="checkbox" class="modal-action" onclick="$('.snipcart-summary').addClass('snipcart-checkout').removeClass('modal-trigger');">
 					<span class="lever"></span>
-					I Agree
+					<div class="snipcart-checkout modal-close btn deep-purple purple-darken-2 white-text waves-effect waves-light"></div>
 				</label>
 			</a>
 			<a href="#policies" class="btn-flat waves-effect waves-dark hide-on-small-only">Policies</a>

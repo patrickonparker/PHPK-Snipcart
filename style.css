@@ -328,7 +328,26 @@
 
 .lever {
 	position: relative;
-	top: -2px;
+}
+
+.switch label input[type=checkbox]:not(:checked)+.lever+.btn {
+	background: transparent !important;
+	box-shadow: none !important;
+	color: #512da8 !important;
+	pointer-events: none !important;
+}
+
+.switch label input[type=checkbox]:not(:checked)+.lever+.btn:before {
+	content: 'I Accept';
+}
+
+.switch label input[type=checkbox]:checked+.lever+.btn:before {
+	content: 'Continue to Checkout';
+}
+
+.snip-layout .snip-btn--highlight {
+	background: #512da8 !important;
+	color: white;
 }
 
 @media (max-width: 800px) {
