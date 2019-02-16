@@ -1,0 +1,314 @@
+/* COMPONENTS */
+
+.brand-logo {
+	height: calc(100% - 20px);
+	background: url('img/logo.png') no-repeat center center/contain;
+	width: 80px;
+	margin: 10px 0;
+}
+
+.btn-large {
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+/* CARDS */
+
+.card {
+	overflow: hidden;
+	border-radius: 30px;
+}
+
+.card h1,
+.card h2,
+.card h3,
+.card h4 {
+	margin-top: 0;
+}
+
+.card-action .btn-floating {
+	float: right;
+	text-align: center;
+	margin-left: 10px;
+	position: relative;
+	top: -37px;
+}
+
+.card .collection {
+	margin-bottom: 0;
+	border-radius: 10px;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+}
+
+p {
+	flex-grow: 1;
+}
+
+/* SECTIONS */
+
+.section {
+	position: relative;
+	border-bottom-right-radius: 15vw;
+}
+
+.section:nth-child(odd) {
+	background: white;
+}
+
+.section:nth-child(even) {
+	background: #ede7f6;
+}
+
+.section:nth-child(odd):before {
+	content: '';
+	background: #ede7f6;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -1;
+}
+
+#copyright {
+	border-bottom-right-radius: 0px !important;
+	padding: 30px 0;
+}
+
+.container {
+	padding-top: 15px;
+	padding-bottom: 30px;
+}
+
+/* ROWS AND COLUMNS */
+
+.row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	margin: 0 !important;
+	float: unset;
+	left: unset;
+	right: unset;
+}
+
+.col .card {
+	height: 100%;
+}
+
+/* WELCOME */
+
+#welcome .card:before {
+	content: '';
+	background: url('img/logo.png') no-repeat center right/contain;
+	height: calc(100%);
+	width: 50%;
+	position: absolute;
+	right: 40px;
+	opacity: 0.15;
+	transform: rotate(15deg);
+}
+
+/* GALLERY */
+
+#gallery,
+.gallery-left,
+.gallery-right,
+.gallery-stacked {
+	display: flex;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+.gallery-left,
+.gallery-right {
+	width: 50%;
+}
+
+.gallery-full,
+.gallery-stacked {
+	padding: 0 10px;
+}
+
+.gallery-full {
+	width: 66.6%;
+}
+
+.gallery-stacked {
+	width: 33.3%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* PRODUCTS */
+
+#welcome {
+	padding-top: 45px;
+}
+
+.specials .card .card-content p {
+	margin-bottom: 1em;
+}
+
+.card-image {
+	border-bottom: 1px solid #dfdfdf;
+	padding-top: 56%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 15px center;
+}
+
+.magic .card-image {
+	background-image: url('img/jumpers/magiccastle.jpg');
+}
+
+.princess .card-image {
+	background-image: url('img/jumpers/princesscastle.jpg');
+}
+
+.frozen .card-image {
+	background-image: url('img/jumpers/frozen.jpg');
+}
+
+.turtles .card-image {
+	background-image: url('img/jumpers/turtles.jpg');
+}
+
+.fiveinone .card-image {
+	background-image: url('img/jumpers/fiveinone.jpg');
+	background-size: 75%;
+}
+
+.jumpandslide .card-image {
+	background-image: url('img/jumpers/jumpandslide.jpg');
+	background-size: 50%;
+}
+
+.card-content small {
+	font-size: 13px;
+}
+
+.card-content small span {
+	float: right;
+}
+
+.price {
+	float: right;
+	color: #4caf50;
+	font-weight: bold;
+}
+
+.price:before {
+	content: '$';
+}
+
+.price:after {
+	content: '.99';
+}
+
+.prices {
+	float: right;
+}
+
+.prices .price {
+	float: none;
+	margin-left: 10px;
+}
+
+.popcorn .card-image {
+	background-image: url('img/equipment/popcorn.png');
+	background-size: 66%;
+	background-position: top left;
+}
+
+.snocone .card-image {
+	background-image: url('img/equipment/snocone.png');
+	background-size: 60%;
+}
+
+.hotdogs .card-image {
+	background-image: url('img/equipment/hotdog.png');
+}
+
+.cottoncandy .card-image {
+	background-image: url('img/equipment/cottonCandy.JPG');
+}
+
+.generator .card-image {
+	background-image: url('img/equipment/generator.png');
+	background-size: 66%;
+}
+
+.supersoaker .card-image {
+	background-image: url('img/extras/super-soaker.jpg');
+}
+
+.leonardo .card-image {
+	background-image: url('img/extras/turtle-costume.jpg');
+	background-position: bottom left;
+}
+
+#packages .card-image {
+	position: relative !important;
+}
+
+#packages img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.shine:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: linear-gradient(to bottom right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media (max-width: 800px) {
+	.s12 {
+		width: 100% !important;
+	}
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+	.m6 {
+		width: 50% !important;
+	}
+}
+
+@media (max-width: 600px) {
+	#gallery {
+		flex-flow: row wrap;
+	}
+
+	.gallery-left,
+	.gallery-right {
+		width: 100%;
+	}
+
+	.gallery-left {
+		margin-bottom: 30px;
+	}
+
+	.gallery-right {
+		flex-direction: row-reverse;
+	}
+}
