@@ -44,8 +44,14 @@
 	flex-direction: column;
 }
 
-p {
-	flex-grow: 1;
+.card .dropdown-content {
+	top: unset !important;
+	left: unset !important;
+	right: 44px;
+	bottom: 0;
+	width: auto !important;
+	max-width: 50% !important;
+	border-radius: 10px;
 }
 
 /* SECTIONS */
