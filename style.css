@@ -47,8 +47,6 @@
 	display: none;
 }
 
-/* CARDS */
-
 .card {
 	overflow: hidden;
 	border-radius: 30px;
@@ -172,6 +170,14 @@
 	right: 40px;
 	opacity: 0.15;
 	transform: rotate(15deg);
+}
+
+#welcome h2 {
+    margin-bottom: 0;
+}
+
+#welcome h5 {
+    margin-top: 0;
 }
 
 /* GALLERY */
