@@ -23,28 +23,30 @@
 
 </head>
 
-<body>
+<body id="home">
 
 	<!-- NAVBAR -->
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper deep-purple darken-2 z-depth-3">
-				<a href="#!" class="brand-logo"></a>
-				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<a href="#home" class="brand-logo"></a>
+				<a data-target="sidenav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
-					<li class="waves-effect waves-light"><a href="tel:3133896074"><i class="material-icons left">phone</i>313-389-6074</a></li>
-					<li class="waves-effect waves-light"><a href="sms:3133896074"><i class="material-icons left">chat_bubble</i>313-389-6074</a></li>
-					<li class="waves-effect waves-light"><a href="#agreement" class="modal-trigger snipcart-summary"><i class="material-icons left">shopping_cart</i><span class="snipcart-total-items"></span></a></li>
+					<li class="waves-effect waves-light"><a href="#products">Rentals</a></li>
+					<li class="waves-effect waves-light"><a href="#packages">Packages</a></li>
+					<li class="waves-effect waves-light"><a href="#contactus">Contact</a></li>
+					<li class="waves-effect waves-light"><a href="#agreement" class="btn deep-purple lighten-1 waves-effect waves-light modal-trigger snipcart-summary"><i class="material-icons left">shopping_cart</i><span class="snipcart-total-items"></span></a></li>
 				</ul>
+				<a href="#agreement" class="btn mobile-cart hide-on-med-and-up deep-purple lighten-1 waves-effect waves-light modal-trigger snipcart-summary"><i class="material-icons left">shopping_cart</i><span class="snipcart-total-items"></span></a>
 			</div>
 		</nav>
 	</div>
 
 	<!-- MOBILE NAV DRAWER -->
-	<ul class="sidenav" id="mobile-demo">
-		<li class="waves-effect waves-dark"><a href="#about">About Us</a></li>
-		<li class="waves-effect waves-dark"><a href="#services">Pricing &amp; Services</a></li>
-		<li class="waves-effect waves-dark"><a href="#contactus">Contact Us</a></li>
+	<ul class="sidenav" id="sidenav">
+		<li class="waves-effect waves-light"><a href="#products">Rentals</a></li>
+		<li class="waves-effect waves-light"><a href="#packages">Packages</a></li>
+		<li class="waves-effect waves-light"><a href="#contactus">Contact</a></li>
 	</ul>
 
 	<!-- WELCOME -->
@@ -58,14 +60,14 @@
 							<p class="flow-text">We appreciate our customers so much that we do a raffle for those who refer us and for those who’ve done multiple bookings with us. Don't forget to send us a text/email if you’ve referred us for your chance to win a $25 gift card!</p>
 						</div>
 						<div class="card-action">
-							<a href="" class="btn-large deep-purple darken-2 waves-effect waves-light">
+							<a href="#reviews" class="modal-trigger btn-large deep-purple darken-2 waves-effect waves-light">
 								<i class="material-icons left">star</i>
 								Reviews
 							</a>
-							<a href="" class="btn-floating deep-purple lighten-1 waves-effect waves-light">
+							<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/bounce.house.739?fref=nf" target="_blank" class="btn-floating deep-purple lighten-1 waves-effect waves-light">
 								<i class="fab fa-facebook-f"></i>
 							</a>
-							<a href="" class="btn-floating deep-purple lighten-1 waves-effect waves-light">
+							<a href="https://www.instagram.com/purpleheartpartykids/" target="_blank" class="btn-floating deep-purple lighten-1 waves-effect waves-light">
 								<i class="fab fa-instagram fa-lg"></i>
 							</a>
 						</div>
@@ -101,7 +103,7 @@
 	<div id="products" class="section">
 		<div class="container">
 			<!-- specials -->
-			<div class="row specials">
+			<div id="specials" class="row">
 				<div class="col s12">
 					<h1>Specials</h1>
 				</div>
@@ -161,7 +163,7 @@
 				</div>
 			</div>
 			<!-- jumpers -->
-			<div class="row jumpers">
+			<div id="jumpers" class="row">
 				<div class="col s12">
 					<h1>Jumpers</h1>
 				</div>
@@ -301,7 +303,7 @@
 				</div>
 			</div>
 			<!-- equipment -->
-			<div class="row equipment">
+			<div id="equipment" class="row">
 				<div class="col s12">
 					<h1>Equipment</h1>
 				</div>
@@ -381,15 +383,15 @@
 					</div>
 				</div>
 			</div>
-			<!-- more -->
-			<div class="row more">
+			<!-- add-ons -->
+			<div id="addons" class="row">
 				<div class="col s12">
-					<h1>More</h1>
+					<h1>Add-Ons</h1>
 				</div>
 				<div class="col s12 m6 l4">
 					<div class="card supersoaker">
 						<div class="card-image">
-							<a class="btn-floating halfway-fab waves-effect waves-light red snipcart-add-item" data-item-id="26" data-item-name="More | Super Soakers" data-item-price="24.99" data-item-url="/">
+							<a class="btn-floating halfway-fab waves-effect waves-light red snipcart-add-item" data-item-id="26" data-item-name="Add-Ons | Super Soakers" data-item-price="24.99" data-item-url="/">
 								<i class="material-icons">add</i>
 							</a>
 						</div>
@@ -404,7 +406,7 @@
 				<div class="col s12 m6 l4">
 					<div class="card leonardo">
 						<div class="card-image">
-							<a class="btn-floating halfway-fab waves-effect waves-light red snipcart-add-item" data-item-id="27" data-item-name="More | Ninja Turtle Costume" data-item-price="74.99" data-item-url="/">
+							<a class="btn-floating halfway-fab waves-effect waves-light red snipcart-add-item" data-item-id="27" data-item-name="Add-Ons | Ninja Turtle Costume" data-item-price="74.99" data-item-url="/">
 								<i class="material-icons">add</i>
 							</a>
 						</div>
@@ -569,7 +571,7 @@
 					<h1 class="clip-text">Contact Us</h1>
 				</div>
 				<div class="col s12">
-					<form method="POST" action="https://formspree.io/info@patrickonparker.com">
+					<form method="POST" action="https://formspree.io/purpleheartpartykids@gmail.com">
 						<div class="row">
 							<div class="input-field col s12">
 								<i class="material-icons prefix">account_circle</i>
@@ -598,10 +600,21 @@
 								<label for="message">Your Message</label>
 							</div>
 						</div>
-						<button type="submit" class="btn-large deep-purple darken-2waves-effect waves-light z-depth-1">
-							<i class="material-icons left">send</i>
-							Send
-						</button>
+						<div class="row">
+							<div class="col s12 m3 l3">
+								<button type="submit" class="btn-large deep-purple darken-2waves-effect waves-light z-depth-1">
+									<i class="material-icons left">send</i>
+									Send
+								</button>
+							</div>
+							<div class="col s12 m9 l9 contact-wrapper" style="justify-content: center;">
+								<div>
+									<a href="tel:5175740623" class="deep-purple-text text-darken-2">Myke: (517) 574-0623</a> |
+									<a href="tel:7348379870" class="deep-purple-text text-darken-2">Nalise: (734) 837-9870</a><br />
+									<a href="mailto:purpleheartpartykids@gmail.com" class="deep-purple-text text-darken-2">purpleheartpartykids@gmail.com</a>
+								</div>
+							</div>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -610,13 +623,16 @@
 
 	<!-- COPYRIGHT -->
 	<div id="copyright" class="section center-align">
-		©
-		<script>
-			var d = new Date();
+		<div>©
+			<script>
+				var d = new Date();
 			var n = d.getFullYear();
 			document.write(n);
 		</script>
-		Purple Heart Party Kids
+			Purple Heart Party Kids</div>
+		<div>Created with Care by
+			<a href="https://www.patrickonparker.com" target="_blank" class="deep-purple-text text-darken-2"><b>Patrick on Parker</b></a>
+		</div>
 	</div>
 
 	<!-- PRELOADER -->
@@ -672,16 +688,72 @@
 		</div>
 	</div>
 
+	<div id="reviews" class="modal">
+		<div class="modal-content">
+			<h2>Reviews</h2>
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<div class="material-placeholder"><img src="img/jazmine.jpg" alt="" class="circle materialboxed initialized"></div>
+					<span class="title">
+						<b>Jazmine</b>
+					</span>
+					<p>Purple Heart Party Kids LLC is THE perfect birthday company because I didn't have to lift a finger! They provided everything from the cake and decorations to the games and prizes! I had 40 kids at my party and they were all entertained all 5 hours.
+						I never heard one kid say they were bored! It's like they host the party! They don't just set up and go they bring great energy and even get wet with the kids during the super soaker contest! I would recommend them to everyone! The prizes were
+						great! The candy was great! Everything was amazing. </p>
+				</li>
+				<li class="collection-item avatar">
+					<div class="material-placeholder"><img src="img/aisha.jpg" alt="" class="circle materialboxed initialized"></div>
+					<span class="title">
+						<b>Aisha</b>
+					</span>
+					<p>I would like to personally thank everyone who came out and supported my baby girl love. It was a great turn out and I love each and every one of you! You guys made it a special 3rd birthday! I want to then give a big thanks to the awesome party
+						planners Nalise Jolie and her man Myke, if it wasn't for y'all amazing business I don't know what I would have done! Y'all they are great, book them for your next kid party!</p>
+				</li>
+				<li class="collection-item avatar">
+					<div class="material-placeholder"><img src="img/aj.jpg" alt="" class="circle materialboxed initialized"></div>
+					<span class="title">
+						<b>AJ</b>
+					</span>
+					<p>Thanks so much Purple Heart Party Kids. My sons Bday Party Turned Out GREAT. I really enjoyed how professional everything was. The kids loved the Games, Sno Cones, Popcorn, and they even brought the Hot Dog Machine! Some of the kids even received
+						prizes for the 1st place winners, which definitely put a smile on there faces. Watching the kids hit the Piñata was fun and everyone enjoyed the cake which was also included in the Platinum Package. Thanks Purple Heart Party Kids! Book em Guys/Gals
+						BOOK EM!</p>
+				</li>
+				<li class="collection-item avatar">
+					<div class="material-placeholder"><img src="img/kylie.jpg" alt="" class="circle materialboxed initialized"></div>
+					<span class="title">
+						<b>Kylie</b>
+					</span>
+					<p>I would like to give a huge Thank You to Myke and Nalise for throwing my daughter such an amazing party. They made sure my daughters day was extra special. This year I was able to actually sit back and enjoy the party! The kids had a BALL and there
+						was something for kids of all ages. I would definitely recommend Purple Heart Party Kids to anyone looking for a great time at a great price!" THANKS PURPLE HEART PARTY KIDS 💕</p>
+				</li>
+				<li class="collection-item avatar">
+					<div class="material-placeholder"><img src="img/anonymous-woman.png" alt="" class="circle materialboxed initialized"></div>
+					<span class="title">
+						<b>Santana</b>
+					</span>
+					<p>If you're looking to have a satisfying event, Purple Heart Party Kids is the company to choose. This company is amazing. They were extremely professional &amp; friendly to all our guests. They made sure every kid had a smile on their face whether it
+						was slapping a simple high five in the air or giving them some form of compliment. Not only that, I'm so anal when it comes to time. They were prompt on arrival &amp; very lenient as far as letting the children get 1 last jump. No one wanted to say
+						good bye. However, the jumping castle was was such a thrill. That last leap in the giant castle was such a great deal to my guest &amp; I. I was flattered they gave the children 1 more opportunity.</p>
+					<p>If your worried about the cleanliness of this company, Purple Heart Party Kids made sure they cleaned behind themselves. If there was a mess to be made, no worries, Purple Heart took care of it!</p>
+					<p>Finally, the party packages is what makes this company so unique. They're a 1 stop shop for birthday parties. Looking for snow cone machines? How about popcorn? Need a cake? They provide those and plenty more as well. Everyone loves great deals,
+						this company is price friendly might I mention. All in all, Party Heart Party Kids is a young, innovative, affordable, friendly, professional, &amp; kid friendly company. If you're looking for a grand experience I highly recommend Purple Heart Party
+						Kids. </p>
+					<p>They absolutely made Santana's first birthday a celebration to Remember!!!</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+
 	<!-- AGREEMENT -->
 	<div id="agreement" class="modal modal-fixed-footer">
 		<div class="modal-content grey lighten-5">
-			<h2>Terms and Conditions</h2>
-			<p>Please agree to our Policies, Terms &amp; Conditions and Safety Policy before continuing.</p>
-			<p>You will still be able to modify your order.</p>
+			<h2>Terms &amp; Conditions</h2>
+			<p class="flow-text">You must accept our Terms &amp; Conditions to continue to checkout.</p>
+			<p class="flow-text">(You will still be able to modify your order after you do.)</p>
 			<!--policies-->
 			<div id="policies" class="agreement-section">
 				<h3>Policies</h3>
-				<div class="collection z-depth-1">
+				<div class="collection">
 					<div class="collection-item">
 						<i class="fa fa-credit-card fa-lg fa-fw left"></i>
 						<b>Rental Agreement &amp; Payment</b>
@@ -691,7 +763,7 @@
 					<div class="collection-item">There is a $25.00-$50.00 non-refundable deposit which will be credited toward the total balance.</div>
 					<div class="collection-item">We accept Cash, Money Orders and Checks payable to Purple Heart Party Kids LLC as well as Chase Quick Pay and deposits into our Chase Business Account.</div>
 				</div>
-				<div class="collection z-depth-1">
+				<div class="collection">
 					<div class="collection-item">
 						<i class="fa fa-plug fa-lg fa-fw left"></i>
 						<b>Space Requirements &amp; Electrical</b>
@@ -700,7 +772,7 @@
 					<div class="collection-item">We recommend separate grounded outlets on dedicated 20 AMP circuits to power each blower that inflates the attraction. Most retractions only require one blower which runs continuously while the inflatable is in use.</div>
 					<div class="collection-item">Also, please be sure to specify the distance between the plug outlet to the Bounce House and whether or not the venue will need a generator. Additional feeswill apply for use of generator.</div>
 				</div>
-				<div class="collection z-depth-1">
+				<div class="collection">
 					<div class="collection-item">
 						<i class="fa fa-truck fa-lg fa-fw left"></i>
 						<b>Deliveries &amp; Weather</b>
@@ -710,7 +782,7 @@
 					<div class="collection-item">We reserve the right to arrive two hours prior to the rental setup time, and request up to two hours after the rental end time.</div>
 					<div class="collection-item">As the customer you have up until the time we arrive at your party location to cancel due to weather conditions. Upon cancellation you will forfeit your non-refundable deposit. Once the attraction has been delivered and set up there are no refunds due to weather.</div>
 				</div>
-				<div class="collection z-depth-1">
+				<div class="collection">
 					<div class="collection-item">
 						<i class="fa fa-ban fa-lg fa-fw left"></i>
 						<b>Misuse &amp; Damage</b>
@@ -723,7 +795,7 @@
 			<!--terms-->
 			<div id="terms" class="agreement-section">
 				<h3>Term and Conditions</h3>
-				<div class="collection z-depth-1">
+				<div class="collection">
 					<div class="collection-item">
 						<p>Lessor hereby leases and Lessee hereby takes from the Lessor the personal property listed under “Description” (herein called the “rented property”), subject to the following terms and conditions.</p>
 						<h5>CUSTOMER RESPONSIBILITIES</h5>
@@ -782,7 +854,7 @@
 			<!--safety-->
 			<div id="safety" class="agreement-section">
 				<h3>Inflatable Safety Policy</h3>
-				<div class="collection z-depth-1">
+				<div class="collection">
 					<div class="collection-item">
 						<h5>The maximum number of children allowed on an inflatable is as follows:</h5>
 						<table>
@@ -816,35 +888,28 @@
 						<p>Rules must be explained to children prior to use. Persons not following safety rules should be excused from play immediately.</p>
 						<ul class="collection">
 							<li class="collection-item">Always operate under adult supervision. Inflatables must be in viewing range AT ALL TIMES.</li>
-							<li class="collection-item">Individuals with head, neck, back or other muscular-skeletal injuries or disabilities, pregnant women, small infants and others who may be susceptible to injury from falls, bumps or bouncing are NOT PERMITTED in the unit at any time.
-							</li>
-							<li class="collection-item">EXTRA CAUTION and supervision is required when younger children are on the inflatable. </li>
-							<li class="collection-item">Ensure all participants are in groups of similar size whenever possible. It is recommended that older children should be warned that they can send the smaller ones flying if they bounce too close or could cause an injury if they come in contact
-								or fall on them. </li>
-							<li class="collection-item">ABSOLUTELY NO flips, wrestling, or other forms of roughhousing or extreme horseplay are allowed in the equipment.
-							</li>
-							<li class="collection-item">DO NOT allow participants to Bounce, Sit or Lay down near the doorway unless entering or exiting the bounder. </li>
-							<li class="collection-item">Do not bounce any closer than two feet from each other or within two feet from the door. Bouncers should not sit or lay down while others are bounding around them, as a jumping child could fall down on top of a sitting or lying child. </li>
-							<li class="collection-item">Do not dive or jump through the entrance or exit of the equipment. Our inflatables are equipped with a safety entrance. Bouncer must enter and exit the inflatables from a sitting or crawling position. </li>
-							<li class="collection-item">Do not allow running in and/or bouncing against the sides of the inflatable equipment. </li>
-							<li class="collection-item">Remove all shoes, eyeglasses and sharp or pinned jewelry. Dangling and hoop earrings are the leading cause of injury. Have shoes clearly placed well out of the way of the entrance. </li>
-							<li class="collection-item">No PETS, sharp objects, or hard toys allowed inside the bouncer. </li>
-							<li class="collection-item">Stay off netting at all times. Do not allow climbing or hanging from the interior or exterior of the equipment. </li>
-							<li class="collection-item">ABSOLUTELY NO FOOD, BEVERAGE, OR GUM is allowed in or on any inflatable equipment. </li>
-							<li class="collection-item">No “Silly String” allowed in or around inflatable equipment. Should Silly String come in contact with the equipment, it will cause irreparable damage and damage fees will be incurred. </li>
-							<li class="collection-item">In case of high winds (over 20mph) and/or lighting, have children exit equipment and unplug blower o deflate unit.
-							</li>
-							<li class="collection-item">In case of accidental deflation have children exit equipment then check for power outage or intake blockage to blower unit or disconnection of the blower tubes. (See set up requirements below). </li>
+							<li class="collection-item">Individuals with head, neck, back or other muscular-skeletal injuries or disabilities, pregnant women, small infants and others who may be susceptible to injury from falls, bumps or bouncing are NOT PERMITTED in the unit at any time.</li>
+							<li class="collection-item">EXTRA CAUTION and supervision is required when younger children are on the inflatable.</li>
+							<li class="collection-item">Ensure all participants are in groups of similar size whenever possible. It is recommended that older children should be warned that they can send the smaller ones flying if they bounce too close or could cause an injury if they come in contact or fall on them.</li>
+							<li class="collection-item">ABSOLUTELY NO flips, wrestling, or other forms of roughhousing or extreme horseplay are allowed in the equipment.</li>
+							<li class="collection-item">DO NOT allow participants to Bounce, Sit or Lay down near the doorway unless entering or exiting the bounder.</li>
+							<li class="collection-item">Do not bounce any closer than two feet from each other or within two feet from the door. Bouncers should not sit or lay down while others are bounding around them, as a jumping child could fall down on top of a sitting or lying child.</li>
+							<li class="collection-item">Do not dive or jump through the entrance or exit of the equipment. Our inflatables are equipped with a safety entrance. Bouncer must enter and exit the inflatables from a sitting or crawling position.</li>
+							<li class="collection-item">Do not allow running in and/or bouncing against the sides of the inflatable equipment.</li>
+							<li class="collection-item">Remove all shoes, eyeglasses and sharp or pinned jewelry. Dangling and hoop earrings are the leading cause of injury. Have shoes clearly placed well out of the way of the entrance.</li>
+							<li class="collection-item">No PETS, sharp objects, or hard toys allowed inside the bouncer.</li>
+							<li class="collection-item">Stay off netting at all times. Do not allow climbing or hanging from the interior or exterior of the equipment.</li>
+							<li class="collection-item">ABSOLUTELY NO FOOD, BEVERAGE, OR GUM is allowed in or on any inflatable equipment.</li>
+							<li class="collection-item">No “Silly String” allowed in or around inflatable equipment. Should Silly String come in contact with the equipment, it will cause irreparable damage and damage fees will be incurred.</li>
+							<li class="collection-item">In case of high winds (over 20mph) and/or lighting, have children exit equipment and unplug blower o deflate unit.</li>
+							<li class="collection-item">In case of accidental deflation have children exit equipment then check for power outage or intake blockage to blower unit or disconnection of the blower tubes. (See set up requirements below).</li>
 							<li class="collection-item">Do not allow use of the equipment if the surface becomes wet. Have the inflatable surface towel dried before resuming play.</li>
 						</ul>
-						<h5>SET UP REQUIREMENTS</h5>
-						<p>Before the inflatable arrives, please turn off automatic sprinklers and do not water the grass the night before. Pick up all animal feces. Make sure the area is level and free of rocks, sticks, etc. Also, please do not water grass until inflatable
-							is picked up.</p>
-						<p>The inflatable can be set up on grass (preferably), cement, asphalt, or other surface that is relatively flat. The unit must be setup within 100 feet of an electrical outlet. Extension cords cannot be doubled up and no items can be connected
-							to that some outlet.The inflatable will be inflated before it is removed so that we can inspect and do a preliminary cleaning of the unit.</p>
+						<h5>SETUP REQUIREMENTS</h5>
+						<p>Before the inflatable arrives, please turn off automatic sprinklers and do not water the grass the night before. Pick up all animal feces. Make sure the area is level and free of rocks, sticks, etc. Also, please do not water grass until inflatable is picked up.</p>
+						<p>The inflatable can be set up on grass (preferably), cement, asphalt, or other surface that is relatively flat. The unit must be setup within 100 feet of an electrical outlet. Extension cords cannot be doubled up and no items can be connected to that some outlet.The inflatable will be inflated before it is removed so that we can inspect and do a preliminary cleaning of the unit.</p>
 						<h5>WEATHER POLICY</h5>
-						<p>Our inflatables have a roof, which provides shade from sun and light rain. However, if the local weather is call for all day rain/storms or winds of 20 mph or more on your reserved day and both you and Purple Heart Party Kids, LLC agree before
-							delivery that it may be unsafe to use, then we will cancel the rental without penalty.</p>
+						<p>Our inflatables have a roof, which provides shade from sun and light rain. However, if the local weather is call for all day rain/storms or winds of 20 mph or more on your reserved day and both you and Purple Heart Party Kids, LLC agree before delivery that it may be unsafe to use, then we will cancel the rental without penalty.</p>
 						<h5>PLEASE NOTE: NO REFUNDS WILL BE GIVEN AFTER THE INFLATABLE IS SET UP.</h5>
 						<p>If the inflatable unit gets wet, everyone should exit the inflatable and unplug the blower unit. If the inside of the inflatable becomes wet it can become very slippery and can become dangerous. If the inside does become wet, dry with towels.
 							Once dry, the inflatable should be once again safe for use.</p>
